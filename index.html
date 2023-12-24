@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>News Feeds</title>
-  <!-- stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
 </head>
-<body>
+<body class="bg-gray-100">
   <!-- header section -->
   <header>
     <nav class="flex justify-between py-5 px-20 mx-auto w-4/5">
@@ -32,10 +31,28 @@
 
   <!-- main section -->
   <main>
-
+    <!-- category items quantity section -->
+    <section class="mx-auto w-4/5 px-20">
+      <div class="bg-white w-full px-5 py-6 mb-10 rounded-xl text-lg font-medium">
+        <p>4 items found for category Entertainment</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <div>
+          <label for="sort-by" class="font-semibold mr-3">Sort by <span>View</span>:</label>
+          <select name="sort" id="sort-by" class="border-r-8 rounded-lg bg-white border-transparent px-4 text-sm py-2 font-bold text-slate-400">
+            <option value="view">default</option>
+            <option value="rating">rating</option>
+          </select>
+        </div>
+        <div class="text-lg">
+          <a class="p-3 bg-blue-600 text-white rounded-md mr-3" href=""><button>Today's Pick</button></a>
+          <a class="p-3 border-2 border-blue-600 text-blue-600 rounded-md" href=""><button>Trending</button></a>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- script -->
-  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+  
   <script src="src/categoris.js"></script>
   <script src="src/app.js"></script>
 </body>
