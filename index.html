@@ -11,7 +11,7 @@
   <!-- header section -->
   <header>
     <nav class="flex justify-between py-5 px-20 mx-auto w-4/5">
-      <div><span class="text-3xl font-bold">News </span>Feeds</div>
+      <div><a href=""><span class="text-3xl font-bold">News </span>Feeds</a></div>
       <div>
         <ul class="flex items-center gap-5 text-lg font-semibold">
           <li class="text-blue-600"><a href="">News <hr class="border-b-2 rounded-full border-blue-600 w-6 mx-auto"></a></li>
@@ -31,7 +31,7 @@
   </header>
 
   <!-- main section -->
-  <main>
+  <main class="mb-20">
     <!-- category items quantity section -->
     <section class="mx-auto w-4/5 px-20 mb-14">
       <div class="bg-white w-full px-5 py-6 mb-10 rounded-xl text-lg font-medium">
@@ -54,11 +54,14 @@
 
     <!-- news content section -->
     <section class="mx-auto w-4/5 px-20">
-      <div id="content-box">
-        
-      </div>
+      <div id="content-box"></div>
     </section>
   </main>
+  <footer>
+    <div class="py-8 bg-white">
+      <h5 class="text-center text-gray-400">Copyright <span id="copyright" class="text-xs">2021</span> News Feeds</h5>
+    </div>
+  </footer>
   <!-- script -->
   <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
   <script src="src/categoris.js"></script>
