@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
+  <script src="https://kit.fontawesome.com/1ea26cc59f.js" crossorigin="anonymous"></script>
   <title>News Feeds</title>
 </head>
 <body class="bg-gray-100">
@@ -24,7 +25,7 @@
     <!-- categories section -->
     <div>
       <ul id="category-container" class="flex justify-between text-gray-500 py-6 px-20 mx-auto w-4/5">
-        <li><a href="">Home</a></li>
+        <li class="cursor-pointer">Home</li>
       </ul>
     </div>
   </header>
@@ -32,16 +33,16 @@
   <!-- main section -->
   <main>
     <!-- category items quantity section -->
-    <section class="mx-auto w-4/5 px-20">
+    <section class="mx-auto w-4/5 px-20 mb-14">
       <div class="bg-white w-full px-5 py-6 mb-10 rounded-xl text-lg font-medium">
         <p>4 items found for category Entertainment</p>
       </div>
       <div class="flex justify-between items-center">
         <div>
           <label for="sort-by" class="font-semibold mr-3">Sort by <span>View</span>:</label>
-          <select name="sort" id="sort-by" class="border-r-8 rounded-lg bg-white border-transparent px-4 text-sm py-2 font-bold text-slate-400">
-            <option value="view">default</option>
-            <option value="rating">rating</option>
+          <select name="sort" id="sort-by" class="border-r-8 rounded-lg bg-white border-transparent px-4 text-sm py-2 font-bold">
+            <option class="text-slate-400" value="view">default</option>
+            <option class="text-slate-400" value="rating">rating</option>
           </select>
         </div>
         <div class="text-lg">
@@ -50,10 +51,18 @@
         </div>
       </div>
     </section>
+
+    <!-- news content section -->
+    <section class="mx-auto w-4/5 px-20">
+      <div id="content-box">
+        
+      </div>
+    </section>
   </main>
   <!-- script -->
-  
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
   <script src="src/categoris.js"></script>
+  <script src="src/news-content.js"></script>
   <script src="src/app.js"></script>
 </body>
 </html>

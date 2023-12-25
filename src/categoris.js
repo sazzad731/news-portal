@@ -7,10 +7,8 @@ const loadData = async () => {
 
 const displayData = (newsCategory) => {
   const categoryContainer = document.getElementById("category-container");
-  newsCategory.forEach((category) => {
-    const li = document.createElement("li");
-    li.innerHTML = `<a href="">${category.category_name}</a>`;
-    categoryContainer.appendChild(li);
+  newsCategory.forEach((category, index) => {
+    categoryContainer.innerHTML += `<li class="cursor-pointer" onclick="categories('${newsCategory[index].category_id}')">${category.category_name}</li>`;
   })
 };
 
